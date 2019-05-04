@@ -1,0 +1,26 @@
+{
+  "name": "cognit19",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suhanacharya/cognit19.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suhanacharya/cognit19/issues"
+  },
+  "homepage": "https://github.com/suhanacharya/cognit19#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mysql": "^2.17.1",
+    "path": "^0.12.7"
+  }
+}
