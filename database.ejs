@@ -1,26 +1,29 @@
 <html>
   <head>
+      <link href="style.css" rel="stylesheet" />
     <title>Medicine search</title>
   </head>
 <body>
     <div class = "header"> <h2>Meds</h2> </div>
     <body style="background-image:url('resources/61802.jpg');">
- <table style="width:40%">
+ <table style="width:40%" align="center">
+
   <tr>
     <th>Medicine Name</th>
-    <th>Alternate1</th>
-    <th>Alternate2</th>
+    <th>Alternate1(US)</th>
+    <th>Alternate2(UK)</th>
+    <th>Symptom</th>
   </tr>
-  <tr>
-    <td align="centre">Dolo</td>
-    <td align="centre">Polo</td>
-    <td align="centre">Colo</td>
-  </tr>
-  <tr>
-    <td align="centre">Sinarest</td>
-    <td align="centre">Fullrest</td>
-    <td align="centre">Norest</td>
-  </tr>
+  <% med.forEach(function(x){ %>
+   <tr>
+      <td><%= x.MED_NAME %></td>
+      <td><%= x.ALT1 %></td>
+      <td><%= x.ALT2 %></td>
+      <td><%= x.symptom %></td>
+   </tr>
+  <% });%>
+
+  
 </table>
 </body> 
 </html>
